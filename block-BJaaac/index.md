@@ -1,4 +1,4 @@
-writeCode
+# writeCode
 
 ## JavaScript in HTML file
 
