@@ -68,8 +68,8 @@ console.log(`
   - Log using console.log [numA * numB]
 */
 
-let numA = +prompt("Number First");
-let numB = +prompt("Number Second");
+let numA = Number(prompt("Number First"));
+let numB = Number(prompt("Number Second"));
 alert(numA + numB);
 alert(numA * numB);
 console.log(numA - numB);
