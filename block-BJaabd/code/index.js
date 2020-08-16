@@ -149,32 +149,33 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 let marks = +prompt("Enter Your Marks (0-100)");
 
-if (marks >= 0 && marks <= 100) {
-	switch (marks >= 0 && marks <= 100) {
-		case marks > 90 && marks <= 100:
-			alert("AA");
-			break;
-		case marks > 80 && marks <= 90:
-			alert("AB");
-			break;
-		case marks > 70 && marks <= 80:
-			alert("BB");
-			break;
-		case marks > 60 && marks <= 70:
-			alert("BC");
-			break;
-		case marks > 50 && marks <= 60:
-			alert("CC");
-			break;
-		case marks > 40 && marks <= 50:
-			alert("CD");
-			break;
-		case marks > 30 && marks <= 40:
-			alert("DD");
-			break;
-		default:
-			alert("FF");
-	}
+switch (true) {
+	case marks > 90 && marks <= 100:
+		alert("AA");
+		break;
+	case marks > 80 && marks <= 90:
+		alert("AB");
+		break;
+	case marks > 70 && marks <= 80:
+		alert("BB");
+		break;
+	case marks > 60 && marks <= 70:
+		alert("BC");
+		break;
+	case marks > 50 && marks <= 60:
+		alert("CC");
+		break;
+	case marks > 40 && marks <= 50:
+		alert("CD");
+		break;
+	case marks > 30 && marks <= 40:
+		alert("DD");
+		break;
+	case marks <= 30:
+		marks < 0 ? alert("Enter a Valid Marks") : alert("FF");
+		break;
+	default:
+		marks > 100 ? alert("Enter a Valid Marks") : alert("Not a Number");
 }
 
 /*
@@ -216,14 +217,23 @@ product >= 0 ? alert("+") : alert("-");
 
 let calculate1 = +prompt("Enter Number1 for Calculation");
 let calculate2 = +prompt("Enter Number2 for Calculation");
+let operation = prompt("Enter a Operation (Add, Sub, Mul, Div)");
 
-if (calculate1 && calculate2) {
-	alert("Addition of Two Number is " + (calculate1 + calculate2));
-	alert("Multiplication of Two Number is " + calculate1 * calculate2);
-	if (calculate1 >= calculate2) {
-		alert("Subtraction of Two Number is " + (calculate1 - calculate2));
-		alert("Division of Two Number is " + calculate1 / calculate2);
-	} else {
-		alert("Number Two is larger then Number one");
-	}
+switch (operation) {
+	case "Add":
+		alert("Addition of Two Number is " + (calculate1 + calculate2));
+		break;
+	case "Mul":
+		alert("Multiplication of Two Number is " + calculate1 * calculate2);
+		break;
+	case "Div":
+		calculate1 >= calculate2
+			? alert("Division of Two Number is " + calculate1 / calculate2)
+			: alert("Number Two is larger then Number one");
+		break;
+	case "Sub":
+		calculate1 >= calculate2
+			? alert("Subtraction of Two Number is " + (calculate1 - calculate2))
+			: alert("Number Two is larger then Number one");
+		break;
 }
