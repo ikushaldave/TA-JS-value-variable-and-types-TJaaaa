@@ -48,23 +48,26 @@ for (let i = 9; i >= 1; i--) {
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
 
 let z = 5;
-
+let descendingString = "";
 while (z >= 0) {
-	console.log(z);
+	descendingString += z;
 	z--;
 }
+console.log(descendingString);
 
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
 
 let t = 10;
+let evenDescendingString = "";
 
 while (t >= 0) {
 	if (t % 2 == 0) {
-		console.log(t);
+		evenDescendingString += t;
 	}
 	t--;
 }
 
+console.log(evenDescendingString);
 // Comparsion
 
 /* 7. Take two value using prompt and store them in variables `num1` and `num2`. Check whether they are equal or not.
