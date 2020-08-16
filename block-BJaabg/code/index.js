@@ -17,7 +17,7 @@ var amount = 0;
 
 while (bank_balance >= amount) {
 	amount += PHONE_PRICE;
-	if (SPENDING_THRESHOLD <= amount) {
+	if (SPENDING_THRESHOLD > amount) {
 		amount += ACCESSORY_PRICE;
 	}
 }
