@@ -1,0 +1,17 @@
+// 20200816222719
+// https://raw.githubusercontent.com/tinkalguli/TA-JS-value-variable-and-types-TJaaaa/block-BJaabg/block-BJaabg/package.json
+
+{
+  "name": "altcampus-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "author": "AltCampus",
+  "license": "GNU GPL V3",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
